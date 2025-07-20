@@ -1,0 +1,21 @@
+# Sensitive file
+wp-config.php
+
+# Uploads (optional)
+wp-content/uploads/
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Editor/IDE folders
+.vscode/
+.idea/
+
+# Backup and compressed files
+*.zip
+*.tar.gz
+*.sql

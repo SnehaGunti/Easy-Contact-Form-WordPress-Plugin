@@ -1,0 +1,60 @@
+@import '../_global';
+
+// Absolute Header
+body {
+    &:not(.admin-bar) {
+        #{$themePrefix} {
+            &-header {
+                #{$varPrefix}-t: 0;
+            }
+        }
+    }
+}
+
+//Theme CSS
+
+#{$themePrefix} {
+
+    //Absolute Header
+    &-header {
+        #{$varPrefix}-pos: absolute;
+        #{$varPrefix}-t: var(--wp-admin--admin-bar--height);
+        #{$varPrefix}-l: 0;
+        #{$varPrefix}-r: 0;
+        #{$varPrefix}-z-idx: 9;
+    }
+
+
+    // Position styles
+    &-pos-style-1 {
+        #{$varPrefix}-pos: relative;
+
+        #{$themePrefix} {
+            &-overlay-box {
+                #{$varPrefix}-b: 0;
+                #{$varPrefix}-r: -100px;
+                #{$varPrefix}-pos: absolute;
+            }
+        }
+    }
+
+    &-testimonials {
+        @include respond-above(md) {
+
+            #{$varPrefix}-pos: relative;
+            #{$varPrefix}-z-idx: 99;
+            #{$varPrefix}-l: -40px;
+        }
+    }
+
+    &-image-style-1 {
+        img {
+
+            @include respond-above(md) {
+                margin-top: -80px;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+}

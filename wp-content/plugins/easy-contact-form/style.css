@@ -1,0 +1,22 @@
+.ecf-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.ecf-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.ecf-form input, .ecf-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
